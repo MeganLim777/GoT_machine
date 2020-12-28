@@ -1,0 +1,20 @@
+#dropContainer {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  margin: 16px;
+}
+
+#drop-area {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 16px;
+}
+
+#output {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  margin: 16px;
+}
