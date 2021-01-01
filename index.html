@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="Handlers/base64Handler.js"></script>
 
   </head>
   <body>
@@ -27,7 +28,7 @@
       <input id="drop-area" type="file" name="imageInput" multiple accept="image/*" onchange="handleDraggedFiles(this.files)" />
       <p>Output in base64:</p>
       <p id="outputbase64">Hey!</p>
-      <button id="sendBase64Btn">Send base64</button>
+      <button id="sendBase64Btn" disabled>Send base64</button>
     </form>
 
     <br>
