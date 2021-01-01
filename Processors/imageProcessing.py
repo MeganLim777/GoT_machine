@@ -5,6 +5,35 @@ except ImportError:
     import Image
 import pytesseract
 import numpy as np
+# import sys
+# from subprocess import Popen, PIPE
+from flask import Flask, render_template, request, jsonify
+
+#Trying to display the things given by the javascript files
+# https://healeycodes.com/javascript/python/beginners/webdev/2019/04/11/talking-between-languages.html
+# base64ImageGiver = Popen(['node', '../index.js'], stdout=PIPE)
+# buffer = b''
+#
+# while true:
+#     # Read the base64 image one char at a time
+#     output = base64ImageGiver.stdout.read(1);
+#
+#     # After finish a full reading:
+#     print(output);
+
+
+#Trying to display the things given by the javascript files
+app = Flask(__name__)
+
+console.log("hey!")
+
+@app.route('imageProcessing', methods=['POST'])
+def imageProcess():
+    number = request.args['pass_to_python']
+
+    print(number)
+
+    return jsonify({})
 
 
 # Reading the image using opencv

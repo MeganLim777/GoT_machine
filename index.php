@@ -1,14 +1,48 @@
-<?php
-echo "Hello world!!!!!!!!!!!";
-readfile("index.html");
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <!--- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>--->
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="Handlers/base64Handler.js"></script>
 
-if(isset($_POST['base64Text']))
-{
-    alert("hello from php");
+  </head>
+  <body>
 
-    $uid = $_POST['base64Text'];
+    <h1>GoT machine</h1>
+    <br>
 
-    echo $uid;
-}
+    <h2>Drop image here</h2>
+    <div id="dropContainer">
+      <h2>dropContainer Div</h2>
+      <input type="file" name="imageInput" onchange="loadFile(event)" />
+      <input id="drop-area" type="file" name="imageInput" multiple accept="image/*" onchange="handleDraggedFiles(this.files)" />
+    </div>
 
-?>
+    <form id="dropContainer">
+      <h2>dropContainer Form</h2>
+      <input type="file" name="imageInput" onchange="loadFile(event)" />
+      <input id="drop-area" type="file" name="imageInput" multiple accept="image/*" onchange="handleDraggedFiles(this.files)" />
+      <p>Output in base64:</p>
+      <input id="outputbase64" name="outputbase64">Hey!</input>
+      <button id="sendBase64Btn" disabled>Send base64</button>
+    </form>
+
+    <br>
+    <br>
+
+    <h2>The same image should apppear here.</h2>
+    <div id="output">
+      <!-- <p>Output in base64:</p>
+      <p id="outputbase64"></p> -->
+      <img id="outputImg"/>
+    </div>
+
+    <button id="class-a">Add A</button>
+    <button>Pass the number 7</button>
+
+    <!-- Load index.js after the content of the page -->
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>

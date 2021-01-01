@@ -66,7 +66,7 @@ function uploadFile(file) {
   reader.readAsDataURL(file);
   reader.onloadend = function() {
     let resultBase64 = reader.result;
-    //console.log(resultBase64); //This DOES work!!!
+    //console.log(resultBase64); This DOES work!!!
     //pass_values(); //Didn't work
     //process.stdout.write(resultBase64); //Didn't work
     // $(document).ready({
@@ -77,7 +77,7 @@ function uploadFile(file) {
 
     //Setting the attribute of the input to contain the converted base64
     var base64Text = document.getElementById("outputbase64");
-    base64Text.setAttribute("base64ToSend", resultBase64);
+    base64Text.setAttribute("base64ToSend", resultBase64)
 
     //Informing the user that the image has just been converted to base64
     base64Text.innerHTML = "Just converted the image into base64";
