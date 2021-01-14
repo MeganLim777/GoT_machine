@@ -1,0 +1,14 @@
+{
+  "name": "got_machine",
+  "version": "1.0.0",
+  "description": "Data entry automation for GoT game",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Megan Lim",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
