@@ -20,7 +20,7 @@ So I thought that I can build an API that automates the data recording!
 Something that will allow me to easily log the data from all the chapters into the excel spreadsheets that I have prepared.
 Then when the monthly Trivia question comes, I can just pull out the appropriate spreadsheet and answer the question.
 
-## What product I have developed as of now
+## What product I have developed as of the last commit in the 'passingVariablesStrategies' branch
 I tried to build an API that will allow me to:
 
     1) Upload a screenshot of a chapter/pageOfTheGame from the client side and into my AWS S3 bucket.
